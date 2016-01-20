@@ -1,0 +1,97 @@
+$fontbase: 1.0rem;
+$base_font_size : 1.6rem;
+$base_line_height: 2;
+
+html {
+  font-size: 62.5%;
+  height: auto;
+}
+
+body {
+  font-size: $base_font_size;
+  line-height: $base_line_height;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 400;
+  background: url("../images/stars.svg");
+  padding-top: 11rem;
+  background-color: $blue;
+  height: auto;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+::selection {
+  background: $white;
+}
+
+::-moz-selection {
+  background: $white;
+}
+
+.type-bold {
+  font-weight: 700;
+}
+
+.type-light {
+  font-weight: 200;
+}
+
+.type-1 {
+  font-family: 'Sofia', cursive;
+  font-size: 7rem;
+  margin-top: 0;
+  font-weight: 400;
+}
+
+.type-2 {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 3rem;
+  text-transform: uppercase;
+  margin-top: 0;
+  font-weight: 300;
+}
+
+.type-3 {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 2rem;
+  margin-top: 0;
+  font-weight: 300;
+}
+
+.type-4 {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 1.6rem;
+  max-width: 55rem;
+  font-weight: 400;
+}
+
+.align-center {
+  text-align: center;
+}
+
+/////////////
+// buttons //
+/////////////
+
+.md-primary {
+  color: $pink;
+  font-size: 2rem;
+  font-weight: initial;
+}
+
+.non-link {
+  cursor: default;
+}
+
+.md-fab.md-primary {
+  background-color: $white!important;
+  md-icon {
+    color: $pink!important;
+  }
+}
+
+md-tooltip {
+  font-size: 1.4rem!important;
+}
