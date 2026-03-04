@@ -1,129 +1,290 @@
-<!doctype html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hilary Rallo — UX Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500&family=Caveat:wght@400;500&display=swap" rel="stylesheet" />
+  <link href="portfolio.css" rel="stylesheet" />
+</head>
+<body>
 
-<html lang="en" ng-app="StarterApp">
+  <!-- Nav -->
+  <nav>
+    <a href="#" class="nav-logo">Hilary Rallo</a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#strata">Strata</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-
-    <title>Hilary Rallo</title>
-
-    <link rel="icon" type="image/png" href="assets/images/favicon.png" />
-    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/0.11.2/angular-material.min.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href='https://fonts.googleapis.com/css?family=Sofia|Work+Sans:300,400' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="assets/styles/main.css">
-
-    <!-- Angular Material Dependencies -->
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular-animate.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular-aria.min.js"></script>
-
-    <!-- Angular Material Javascript now available via Google CDN; version 0.11.2 used here -->
-    <script src="https://ajax.googleapis.com/ajax/libs/angular_material/0.11.2/angular-material.min.js"></script>
-    <script src="js/main.js"></script>
-
-  </head>
-
-  <body ng-controller="AppCtrl">
-
-    <header layout="row" layout-align="center center">
-      <md-button class="md-primary" href="#me">me</md-button>
-      <md-button class="md-primary" href="#work">work</md-button>
-      <md-button class="md-primary" href="#contact">contact</md-button>
-    </header>
-
-    <div id="me" layout="column" layout-align="start center" class="container align-center">
-      <h2 class="type-2 color-white bump_bottom-lg">Hello</h2>
-      <h1 class="type-1 color-white bump_bottom-lg">I'm Hilary</h1>
-      <img src="assets/images/avatar.png" class="bump_bottom-lg"/>
-      <h2 class="type-3 color-white bump_bottom-lg">a front-end developer and web designer.</h2>
-      <p class="type-4 color-white bump_top-lg">I am a front-end developer who loves to dig into an elegant functional design and breath life into it in a browser. I have had four years experience in building responsive websites and applications. UI development is my bread and butter, but I have had a fair share of AngularJs and JQuery experience as well.</p>
-      <p class="type-4 color-white bump_bottom-lg">When I'm not painting the internet with my SASS-y paintbrush, I'm probably hanging out with my cats, reading a good book, or hiking beautiful Colorado.</p>
-      <div class="bump_bottom-lg" layout="column" layout-align="start center">
-        <md-button class="md-icon-button md-primary non-link bump_bottom-lg" aria-label="Favorite">
-          <md-icon class="material-icons">favorite_border</md-icon>
-        </md-button>
+  <!-- Hero -->
+  <div class="hero">
+    <div class="hero-text">
+      <p class="hero-eyebrow">Senior UX Engineer</p>
+      <h1 class="hero-title">
+        Craft at the<br/>
+        intersection of<br/>
+        <em>design & code.</em>
+      </h1>
+      <p class="hero-sub">
+        13 years building accessible, responsive interfaces that feel as considered as they look. I own the full experience from token to interaction to shipped product.
+      </p>
+      <div class="hero-actions">
+        <a href="#work" class="btn btn-primary">View Work</a>
+        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
       </div>
     </div>
 
-    <div id="work" class="background-white bump_top-lg">
-      <div class="container swell_vertical-lg">
-        <h1 class="type-1 bump_vertical-lg align-center">Work</h1>
-        <div id="columns">
-          <a target="_blank" href="http://sinithmusicproductions.com/" class="pin">
-            <img src="assets/images/work/smpThumb.png" />
-          </a>
-          <a href="http://www.hackstl.com/" target="_blank" class="pin">
-            <img src="assets/images/work/hackThumb.png" />
-          </a>
-          <div class="pin">
-            <img src="assets/images/work/githubThumb.png" />
-          </div>
-          <a href="http://www.abbviecontractmfg.com/" target="_blank" class="pin">
-            <img src="assets/images/work/abbvieThumb.png" />
-          </a>
-          <a href="http://drivefordot.com/" target="_blank" class="pin">
-            <img src="assets/images/work/dotThumb.png" />
-          </a>
-          <div class="pin">
-            <img src="assets/images/work/mbdThumb.png" />
-          </div>
-          <a href="http://bellevuerx.com/" target="_blank" class="pin">
-            <img src="assets/images/work/bellevueThumb.png" />
-          </a>
-          <a href="http://www.mobap.edu/" target="_blank" class="pin">
-            <img src="assets/images/work/mbuThumb.png" />
-          </a>
-          <a href="http://www.csileasing.com/" target="_blank" class="pin">
-            <img src="assets/images/work/csiThumb.png" />
-          </a>
-          <a href="http://filtrationgroup.com/" target="_blank" class="pin">
-            <img src="assets/images/work/filtrationgroupThumb.png" />
-          </a>
-          <a href="http://www.rosedesign.com/" target="_blank" class="pin">
-            <img src="assets/images/work/roseThumb.png" />
-          </a>
-          <!-- <div class="pin">
-            <img src="assets/images/work/12thumb.png" />
-          </div> -->
-          <a href="http://jiffyxseries.com/" target="_blank" class="pin">
-            <img src="assets/images/work/jiffyThumb.png" />
-          </a>
-          <a href="http://boundlessgeo.com/" target="_blank" class="pin">
-            <img src="assets/images/work/boundlessThumb.png" />
-          </a>
-          <div class="pin">
-            <img src="assets/images/work/nrThumb.png" />
-          </div>
-          <a href="http://redcard.com/" target="_blank" class="pin">
-            <img src="assets/images/work/redcardThumb.png" />
-          </a>
-          <a href="https://polymer.gloo.us/" target="_blank" class="pin">
-            <img src="assets/images/work/polymerThumb.png" />
-          </a>
+    <div class="hero-visual">
+      <div class="hero-card">
+        <p class="card-label">At a glance</p>
+        <div class="card-stat">
+          <span class="stat-label">Experience</span>
+          <span class="stat-value stat-accent">13 years</span>
+        </div>
+        <div class="card-stat">
+          <span class="stat-label">Specialty</span>
+          <span class="stat-value">React · Next.js · Design Systems</span>
+        </div>
+        <div class="card-stat">
+          <span class="stat-label">Focus</span>
+          <span class="stat-value">Accessibility · UX · Motion</span>
+        </div>
+        <div class="card-stat">
+          <span class="stat-label">Location</span>
+          <span class="stat-value">Missouri · Remote</span>
+        </div>
+        <div class="card-stat">
+          <span class="stat-label">Available for</span>
+          <span class="stat-value stat-accent">Full-time · Contract</span>
         </div>
       </div>
     </div>
+  </div>
 
-    <footer id="contact" layout="column" layout-align="start center" class="container swell_vertical-lg align-center">
-      <h2 class="type-2 color-white bump_vertical-lg">Like what you see?</h2>
-      <h1 class="type-1 color-white bump_bottom-lg">Get in Touch</h1>
-      <div layout="row" layout-align="center center" class="container bump_bottom-lg">
-        <md-button class="md-fab md-primary bump_bottom-lg" aria-label="Email" href="mailto:hrallo@icloud.com">
-          <md-tooltip>Email</md-tooltip>
-          <md-icon class="material-icons">email</md-icon>
-        </md-button>
-        <md-button class="md-fab md-primary bump_bottom-lg" aria-label="Github" href="https://github.com/hrallo" target="_blank">
-          <md-tooltip>Github</md-tooltip>
-          <md-icon class="material-icons">code</md-icon>
-        </md-button>
-        <md-button class="md-fab md-primary bump_bottom-lg" aria-label="Email" href="assets/images/resume.pdf" target="_blank">
-          <md-tooltip>Resume</md-tooltip>
-          <md-icon class="material-icons">description</md-icon>
-        </md-button>
+  <div class="divider"></div>
+
+  <!-- About -->
+  <section id="about">
+    <p class="section-eyebrow reveal">About</p>
+    <h2 class="section-title reveal">The thinking behind<br/><em>the building.</em></h2>
+    <div class="about-grid">
+      <div class="about-philosophy reveal">
+        <p class="philosophy-text">
+          I believe the best interfaces are invisible. They get out of the way and let people do what they came to do confidently, without confusion, without frustration. That belief shapes every token, every component, every interaction I build.
+        </p>
       </div>
-    </footer>
+      <div class="about-details reveal">
+        <div class="detail-item">
+          <span class="detail-label">Philosophy</span>
+          <span class="detail-value">Accessibility isn't a feature — it's a foundation. I build for everyone from the start.</span>
+        </div>
+        <div class="detail-item">
+          <span class="detail-label">Approach</span>
+          <span class="detail-value">Design systems thinking. Component architecture. The full stack of the frontend experience.</span>
+        </div>
+        <div class="detail-item">
+          <span class="detail-label">Currently exploring</span>
+          <span class="detail-value">AI-native UX patterns,streaming interfaces, progressive disclosure, human-in-the-loop design.</span>
+        </div>
+        <div class="detail-item">
+          <span class="detail-label">Tools</span>
+          <span class="detail-value">React · Next.js · TypeScript · Tailwind · Figma · Storybook · Framer Motion</span>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  </body>
+  <div class="divider"></div>
+
+  <!-- Work History -->
+  <section id="work">
+    <p class="section-eyebrow reveal">Experience</p>
+    <h2 class="section-title reveal">Where I've built<br/><em>things that mattered.</em></h2>
+
+    <div class="work-list">
+
+      <div class="work-item reveal">
+        <span class="work-period">2024 — 2026</span>
+        <div class="work-content">
+          <h3 class="work-role">Senior Frontend Engineer</h3>
+          <p class="work-company">Mural</p>
+          <p class="work-desc">Led frontend development on core collaboration features for a visual workspace used by enterprise teams globally. Owned component architecture, accessibility standards, and design system contributions across a large React codebase.</p>
+          <div class="work-tags">
+            <span class="tag">React</span>
+            <span class="tag">TypeScript</span>
+            <span class="tag">Design Systems</span>
+            <span class="tag">Accessibility</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="work-item reveal">
+        <span class="work-period">2021 — 2024</span>
+        <div class="work-content">
+          <h3 class="work-role">Senior UX Engineer</h3>
+          <p class="work-company">Gloo</p>
+          <p class="work-desc">Built and maintained the design system powering a B2B SaaS platform. Bridged design and engineering, establishing token architecture, component patterns, and documentation that scaled across multiple product teams.</p>
+          <div class="work-tags">
+            <span class="tag">Next.js</span>
+            <span class="tag">Storybook</span>
+            <span class="tag">Figma</span>
+            <span class="tag">Component Library</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="work-item reveal">
+        <span class="work-period">2014 — 2021</span>
+        <div class="work-content">
+          <h3 class="work-role">Frontend Engineer & UX Lead</h3>
+          <p class="work-company">Various · Agency & Product</p>
+          <p class="work-desc">Seven years spanning agency and in-house product work. Built responsive, accessible interfaces across industries from marketing to complex SaaS dashboards. Developed a deep appreciation for the craft of the frontend and the discipline of the UX.</p>
+          <div class="work-tags">
+            <span class="tag">React</span>
+            <span class="tag">CSS</span>
+            <span class="tag">UX Design</span>
+            <span class="tag">Responsive</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="skills-section">
+    <div class="skills-grid reveal">
+      <div class="skill-cell">
+        <p class="skill-category">Core</p>
+        <ul class="skill-list">
+          <li>React</li>
+          <li>Next.js</li>
+          <li>TypeScript</li>
+          <li>JavaScript</li>
+          <li>HTML · CSS</li>
+        </ul>
+      </div>
+      <div class="skill-cell">
+        <p class="skill-category">Styling</p>
+        <ul class="skill-list">
+          <li>Tailwind CSS</li>
+          <li>CSS Modules</li>
+          <li>Framer Motion</li>
+          <li>Design Tokens</li>
+          <li>Responsive Design</li>
+        </ul>
+      </div>
+      <div class="skill-cell">
+        <p class="skill-category">Systems</p>
+        <ul class="skill-list">
+          <li>Design Systems</li>
+          <li>Component Architecture</li>
+          <li>Storybook</li>
+          <li>Figma</li>
+          <li>Accessibility (WCAG)</li>
+        </ul>
+      </div>
+      <div class="skill-cell">
+        <p class="skill-category">Workflow</p>
+        <ul class="skill-list">
+          <li>Git · GitHub</li>
+          <li>Vite · Webpack</li>
+          <li>Claude · Cursor</li>
+          <li>Agile · Scrum</li>
+          <li>Cross-functional collab</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Strata -->
+  <div class="strata-section" id="strata">
+    <div class="strata-inner">
+      <p class="section-eyebrow reveal">Featured Project</p>
+      <h2 class="section-title reveal">Strata Design System —<br/><em>built from conviction.</em></h2>
+      <p class="section-body reveal">
+        A production-grade design system built in React, TypeScript, and Tailwind v4. Every decision from token architecture to motion accessibility reflects how I think about building things that last.
+      </p>
+
+      <div class="strata-grid">
+        <div class="strata-card reveal">
+          <svg class="strata-card-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12a7.5 7.5 0 0015 0m-15 0a7.5 7.5 0 1115 0m-15 0H3m16.5 0H21m-1.5 0H12m-8.457 3.077l1.41-.513m14.095-5.13l1.41-.513M5.106 17.785l1.15-.964m11.49-9.642l1.149-.964M7.501 19.795l.75-1.3m7.5-12.99l.75-1.3m-6.063 16.658l.26-1.477m2.605-14.772l.26-1.477m0 17.726l-.26-1.477M10.698 4.614l-.26-1.477M16.5 19.794l-.75-1.299M7.5 4.205L12 12m6.894 5.785l-1.149-.964M6.256 7.178l-1.15-.964m15.352 8.864l-1.41-.513M4.954 9.435l-1.41-.514M12.002 12l-3.75 6.495" />
+          </svg>
+          <h3 class="strata-card-title">Token Architecture</h3>
+          <p class="strata-card-body">Earthy, WCAG AA compliant color system with semantic tokens, paired with a dual-font typography scale that separates hierarchy from aesthetics.</p>
+        </div>
+        <div class="strata-card reveal">
+          <svg class="strata-card-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M14.25 9.75L16.5 12l-2.25 2.25m-4.5 0L7.5 12l2.25-2.25M6 20.25h12A2.25 2.25 0 0020.25 18V6A2.25 2.25 0 0018 3.75H6A2.25 2.25 0 003.75 6v12A2.25 2.25 0 006 20.25z" />
+          </svg>
+          <h3 class="strata-card-title">Component System</h3>
+          <p class="strata-card-body">Heading, Body, Button, and Animate components built with forwardRef, semantic HTML separation from visual styling, and full TypeScript coverage.</p>
+        </div>
+        <div class="strata-card reveal">
+          <svg class="strata-card-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
+          </svg>
+          <h3 class="strata-card-title">Motion & Accessibility</h3>
+          <p class="strata-card-body">Framer Motion animation system with useReducedMotion support. Six animation variants with configurable triggers. Accessibility is baked in, not bolted on.</p>
+        </div>
+      </div>
+
+      <div class="strata-cta reveal">
+        <a href="https://hrallo.github.io/strata" target="_blank" class="btn btn-primary">View Strata Live ↗</a>
+        <a href="https://github.com/hrallo/strata" target="_blank" class="btn-outline-light">GitHub ↗</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact -->
+  <div class="contact-section" id="contact">
+    <div class="contact-inner">
+      <p class="section-eyebrow reveal">Contact</p>
+      <div class="availability-badge reveal">
+        <span class="availability-dot"></span>
+        Available for work
+      </div>
+      <h2 class="section-title reveal">Let's build something<br/><em>worth building.</em></h2>
+      <p class="contact-body reveal">
+        Open to full-time roles and contract engagements. I work best with teams that care about craft, value accessibility, and understand that good UX and good code are inseparable. Contract clients get a senior engineer who doesn't need direction on design decisions.
+      </p>
+      <div class="contact-links reveal">
+        <a href="mailto:hilary@icloud.com" class="btn btn-primary">Send an Email</a>
+        <a href="https://linkedin.com/in/hilaryrallo" target="_blank" class="btn btn-secondary">LinkedIn ↗</a>
+        <a href="https://github.com/hrallo" target="_blank" class="btn btn-secondary">GitHub ↗</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <span class="footer-name">Hilary Rallo</span>
+    <span class="footer-note">Built with care, like everything else.</span>
+  </footer>
+
+  <script>
+    // Scroll reveal
+    const reveals = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry, i) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => {
+            entry.target.classList.add('visible');
+          }, 80);
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+    reveals.forEach(el => observer.observe(el));
+  </script>
+
+</body>
 </html>
